@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Visualização - Pedidos</title>
+    <title>Cadastro - Fornecedores</title>
     <link rel="shortcut icon" href="../img/favicon2.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/vis_pedidos.css">
-    <script src="../js/vis_pedidos.js" defer></script>
+    <link rel="stylesheet" href="../css/cad_fornecedores.css">
+    <script src="../js/cad_fornecedores.js" defer></script>
 </head>
 
 <body>
     <header><!--cabecalho-->
         <nav class="botao_nav">
             <img class="logo" src="../img/logo.png" alt="">
-            <h1>Visualização - Pedidos</h1>
+            <h1>Cadastro - Fornecedores</h1>
             <a class="botao_fechar" href="fechar">
                 <svg xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 384 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
@@ -104,48 +104,39 @@
                 <a href="">estoque</a>
             </nav>
         </aside>
-
         <section class="section__formulario"><!--tag section indica uma secao-->
             <form class="formulario-central">
-
-
-                <div class="alinhamento">
-                    <div class="div__alinhamento_campos">
-                        <label for="input__srcdtinicial">Data Inicial: </label>
-                        <input type="date" name="input__srcdtinicial" id="">
-                    </div>
-
-                    <div class="div__alinhamento_campos">
-                        <label for="input__srcdtfinal">Data Final: </label>
-                        <input type="date" name="input__srcdtfinal" id="">
-                    </div>
-
-                    <div class="div__alinhamento_campos">
-                        <label for="input__srcpedido">Pedido: </label>
-                        <input type="number" name="input__srcpedido" id="">
-                    </div>
+                <div class="div__alinhamento_campos">
+                    <label for="ID">ID: </label>
+                    <input type="text" name="ID" id="">
+                </div>
+                <div class="div__alinhamento_campos">
+                    <label for="input__nome">Nome: </label>
+                    <input type="text" name="input__nome" id="">
                 </div>
 
-
-
-                <div class="PDF">
-                    <table cellpadding="0" cellspacing="0" width="50%" height="50%">
-                        <tr>
-                            <td>
-                                <iframe src="../issues/relatorio.pdf" width="600" height="600" style="border: none;">
-                                </iframe>
-                            </td>
-                        </tr>
-                    </table>
-
+                <div class="div__alinhamento_campos">
+                    <label for="input__cnpj">CNPJ: </label>
+                    <input type="text" name="input__cnpj" id="">
                 </div>
-
-                <div class="btn">
-                    <button class="botao_gerarXLS" type="submit">Gerar XLS</button>
-                    <button class="botao_gerarPDF" type="submit">Gerar PDF</button>
+                <div class="div__alinhamento_campos">
+                    <label for="input__ie">IE: </label>
+                    <input type="text" name="input__ie" id="">
                 </div>
+                <div class="div__alinhamento_campos">
+                    <label for="input__razao">Razão Social: </label>
+                    <input type="text" name="input__razao" id="">
+                </div>
+                <div class="div__alinhamento_campos">
+                    <label for="input__email">Email: </label>
+                    <input type="email" name="input__email" id="">
+                </div>
+                <div class="div__alinhamento_campos">
+                    <label for="input__endereco">Endereço: </label>
+                    <input type="text" name="input__endereco" id="">
+                </div>
+                <button class="botao_cadastrar" type="submit">Cadastrar</button>
             </form>
-
         </section>
     </main>
 
